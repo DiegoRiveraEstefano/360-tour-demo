@@ -46,12 +46,25 @@ npm install
 ```bash
 bun run dev
 ```
+or
+
+```bash
+ng serve
+```
+
 Then open [http://localhost:4200](http://localhost:4200) in your browser.
 
 ### 4️⃣ Build the Project
 ```bash
 bun run build
 ```
+
+or
+
+```bash
+ng build
+```
+
 This will generate an optimized production build.
 
 ## 🚀 Deployment
@@ -78,6 +91,13 @@ This project is open-source under the [GPL-3.0](LICENSE).
 
 ## 🤝 Contributing
 Pull requests are welcome! Please open an issue to discuss any major changes.
+
+---
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
 
 ---
 
