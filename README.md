@@ -17,10 +17,10 @@
 ## 🚀 Roadmap
 - [x] Project setup with Angular & Bun
 - [x] Integrate TailwindCSS for styling
-- [x] Implement Photo Sphere Viewer for 360° navigation
+- [ ] Implement Photo Sphere Viewer for 360° navigation
 - [ ] Add SSR & SSG support
 - [ ] Optimize hydration with Angular Signals
-- [ ] Implement GitHub Actions for CI/CD
+- [x] Implement GitHub Actions for CI/CD
 - [ ] Deploy demo version
 
 ## 🛠️ Installation & Setup
