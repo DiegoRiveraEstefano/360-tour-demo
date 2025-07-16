@@ -1,104 +1,48 @@
-# 🏞️ 360° Virtual Tour Demo
+# Astro Starter Kit: Basics
 
-![Virtual Tour Preview](https://via.placeholder.com/1200x400?text=360+Tour+Preview)
-
-> 🚀 A lightweight and interactive **360° virtual tour** showcasing immersive web development skills with modern technologies.
-
-## 📌 Features
-- 🌍 **360° Image Navigation** powered by [Photo Sphere Viewer](https://photo-sphere-viewer.js.org/).
-- ⚡ **Built with Angular** for a scalable and maintainable structure.
-- 🎨 **Tailwind CSS** for sleek and responsive styling.
-- 🔄 **Server-Side Rendering (SSR) & Static Site Generation (SSG)** for enhanced performance.
-- 💧 **Hydration & Signals** for optimized reactivity.
-- 🔍 **BiomeJS** for code linting and formatting.
-- 🏎 **Bun** for fast package management and runtime.
-- 🔄 **GitHub Actions** for automated CI/CD.
-
-## 🚀 Roadmap
-- [x] Project setup with Angular & Bun
-- [x] Integrate TailwindCSS for styling
-- [ ] Implement Photo Sphere Viewer for 360° navigation
-- [ ] Add SSR & SSG support
-- [ ] Optimize hydration with Angular Signals
-- [x] Implement GitHub Actions for CI/CD
-- [ ] Deploy demo version
-
-## 🛠️ Installation & Setup
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/yourusername/360-tour-demo.git
-cd 360-tour-demo
+```sh
+npm create astro@latest -- --template basics
 ```
 
-### 2️⃣ Install Dependencies
-Using **Bun**:
-```bash
-bun install
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
 ```
 
-Using **npm** (alternative):
-```bash
-npm install
-```
+To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-### 3️⃣ Run Development Server
-```bash
-bun run dev
-```
-or
+## 🧞 Commands
 
-```bash
-ng serve
-```
+All commands are run from the root of the project, from a terminal:
 
-Then open [http://localhost:4200](http://localhost:4200) in your browser.
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-### 4️⃣ Build the Project
-```bash
-bun run build
-```
+## 👀 Want to learn more?
 
-or
-
-```bash
-ng build
-```
-
-This will generate an optimized production build.
-
-## 🚀 Deployment
-This project supports SSR/SSG, so you can deploy it to platforms like **Vercel**, **Netlify**, or your preferred hosting.
-
-To preview a production build locally:
-```bash
-bun run preview
-```
-
-## 🧪 Running Tests
-```bash
-bun run test
-```
-
-## 🔄 Continuous Integration
-This project uses **GitHub Actions** for CI/CD. On every push to `main`, the following workflows will run:
-- **Build & Test** the application
-- **Lint & Format** using BiomeJS
-- **Deploy to Staging** (if applicable)
-
-## 📜 License
-This project is open-source under the [GPL-3.0](LICENSE).
-
-## 🤝 Contributing
-Pull requests are welcome! Please open an issue to discuss any major changes.
-
----
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-
-
----
-
-🚀 Happy Coding!
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

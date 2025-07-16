@@ -1,0 +1,142 @@
+---
+// Header component with responsive navigation
+---
+
+<header
+  class="sticky top-0 z-50 bg-base-100/95 backdrop-blur-sm border-b border-gray-200"
+>
+  <div class="navbar max-w-7xl mx-auto px-4">
+    <div class="navbar-start">
+      <div class="dropdown lg:hidden">
+        <div tabindex="0" role="button" class="btn btn-ghost">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16"></path>
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+        >
+          <li>
+            <a href="/demo" class="text-neutral hover:text-primary">Demo</a>
+          </li>
+          <li>
+            <a href="#benefits" class="text-white hover:text-primary-500"
+              >Benefits</a
+            >
+          </li>
+          <li>
+            <a href="#use-cases" class="text-white hover:text-primary-500"
+              >Use Cases</a
+            >
+          </li>
+          <li>
+            <a href="#features" class="text-white hover:text-primary-500"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a href="#testimonials" class="text-white hover:text-primary-500"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="text-white hover:text-primary-500"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <a
+        href="/"
+        class="text-xl font-bold text-primary flex items-center gap-2"
+      >
+        <div
+          class="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 0-4.5h-9a2.25 2.25 0 0 0 0 4.5Z"
+            ></path>
+          </svg>
+        </div>
+        VirtualTour360
+      </a>
+    </div>
+
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 space-x-2">
+        <li>
+          <a
+            href="/demo"
+            class="text-primary-300 hover:text-primary transition-colors duration-200"
+            >Demo</a
+          >
+        </li>
+        <li>
+          <a
+            href="#benefits"
+            class="text-secondary-300 hover:text-secondary transition-colors duration-200"
+            >Benefits</a
+          >
+        </li>
+        <li>
+          <a
+            href="#use-cases"
+            class="text-accent-300 hover:text-accent transition-colors duration-200"
+            >Use Cases</a
+          >
+        </li>
+        <li>
+          <a
+            href="#features"
+            class="text-white hover:text-gray-300 transition-colors duration-200"
+            >Features</a
+          >
+        </li>
+        <li>
+          <a
+            href="#testimonials"
+            class="text-white hover:text-gray-300 transition-colors duration-200"
+            >Testimonials</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="text-white hover:text-gray-300 transition-colors duration-200"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar-end">
+      <a
+        href="#contact"
+        class="btn btn-primary text-white hover:bg-primary-600 transition-all duration-200"
+      >
+        Get Started
+      </a>
+    </div>
+  </div>
+</header>

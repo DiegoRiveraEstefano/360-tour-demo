@@ -1,0 +1,449 @@
+---
+// Contact section with form and FAQ
+---
+
+<section
+  id="contact"
+  class="py-20 bg-gradient-to-br from-gray-50 to-primary-50"
+>
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-neutral mb-6">
+        Ready to Get <span class="text-primary">Started</span>?
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Transform your business with professional 360° virtual tours. Contact us
+        today for a free consultation.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <!-- Contact Form -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg">
+        <h3 class="text-2xl font-bold text-neutral mb-6">
+          Get Your Free Quote
+        </h3>
+
+        <form class="space-y-6" id="contact-form">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label
+                for="firstName"
+                class="block text-sm font-medium text-gray-700 mb-2"
+                >First Name</label
+              >
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                required
+                class="input input-bordered w-full focus:ring-2 focus:ring-primary focus:border-primary"
+              />
+            </div>
+            <div>
+              <label
+                for="lastName"
+                class="block text-sm font-medium text-gray-700 mb-2"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                required
+                class="input input-bordered w-full focus:ring-2 focus:ring-primary focus:border-primary"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label
+              for="email"
+              class="block text-sm font-medium text-gray-700 mb-2"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="input input-bordered w-full focus:ring-2 focus:ring-primary focus:border-primary"
+            />
+          </div>
+
+          <div>
+            <label
+              for="company"
+              class="block text-sm font-medium text-gray-700 mb-2"
+              >Company Name</label
+            >
+            <input
+              type="text"
+              id="company"
+              name="company"
+              class="input input-bordered w-full focus:ring-2 focus:ring-primary focus:border-primary"
+            />
+          </div>
+
+          <div>
+            <label
+              for="industry"
+              class="block text-sm font-medium text-gray-700 mb-2"
+              >Industry</label
+            >
+            <select
+              id="industry"
+              name="industry"
+              required
+              class="select select-bordered w-full focus:ring-2 focus:ring-primary focus:border-primary"
+            >
+              <option value="">Select your industry</option>
+              <option value="real-estate">Real Estate</option>
+              <option value="education">Education</option>
+              <option value="tourism">Tourism & Hospitality</option>
+              <option value="corporate">Corporate</option>
+              <option value="retail">Retail</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label
+              for="projectType"
+              class="block text-sm font-medium text-gray-700 mb-2"
+              >Project Type</label
+            >
+            <select
+              id="projectType"
+              name="projectType"
+              required
+              class="select select-bordered w-full focus:ring-2 focus:ring-primary focus:border-primary"
+            >
+              <option value="">Select project type</option>
+              <option value="single-tour">Single Virtual Tour</option>
+              <option value="multiple-tours"
+                >Multiple Virtual Tours (2-10)</option
+              >
+              <option value="enterprise">Enterprise Package (10+)</option>
+              <option value="custom">Custom Solution</option>
+            </select>
+          </div>
+
+          <div>
+            <label
+              for="budget"
+              class="block text-sm font-medium text-gray-700 mb-2"
+              >Budget Range</label
+            >
+            <select
+              id="budget"
+              name="budget"
+              class="select select-bordered w-full focus:ring-2 focus:ring-primary focus:border-primary"
+            >
+              <option value="">Select budget range</option>
+              <option value="under-5k">Under $5,000</option>
+              <option value="5k-15k">$5,000 - $15,000</option>
+              <option value="15k-50k">$15,000 - $50,000</option>
+              <option value="50k-plus">$50,000+</option>
+              <option value="discuss">Prefer to discuss</option>
+            </select>
+          </div>
+
+          <div>
+            <label
+              for="timeline"
+              class="block text-sm font-medium text-gray-700 mb-2"
+              >Timeline</label
+            >
+            <select
+              id="timeline"
+              name="timeline"
+              required
+              class="select select-bordered w-full focus:ring-2 focus:ring-primary focus:border-primary"
+            >
+              <option value="">Select timeline</option>
+              <option value="asap">ASAP</option>
+              <option value="1-month">Within 1 month</option>
+              <option value="2-3-months">2-3 months</option>
+              <option value="6-months">Within 6 months</option>
+              <option value="planning">Just planning ahead</option>
+            </select>
+          </div>
+
+          <div>
+            <label
+              for="message"
+              class="block text-sm font-medium text-gray-700 mb-2"
+              >Project Details</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Tell us about your project, specific requirements, or any questions you have..."
+              class="textarea textarea-bordered w-full focus:ring-2 focus:ring-primary focus:border-primary"
+            ></textarea>
+          </div>
+
+          <div class="flex items-start">
+            <input
+              id="consent"
+              name="consent"
+              type="checkbox"
+              required
+              class="checkbox checkbox-primary mt-1"
+            />
+            <label for="consent" class="ml-3 text-sm text-gray-600">
+              I agree to receive communications from VirtualTour360 and
+              understand my information will be used according to the <a
+                href="#"
+                class="text-primary hover:underline">Privacy Policy</a
+              >.
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary w-full text-white hover:bg-primary-600 transition-colors duration-200"
+          >
+            Send Message
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5 ml-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+              ></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Information & FAQ -->
+      <div class="space-y-8">
+        <!-- Contact Methods -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <h3 class="text-2xl font-bold text-neutral mb-6">Get in Touch</h3>
+
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center flex-shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-neutral mb-1">Phone Support</h4>
+                <p class="text-gray-600 mb-2">
+                  Speak directly with our experts
+                </p>
+                <a
+                  href="tel:+1-555-123-4567"
+                  class="text-primary-500 hover:underline font-medium"
+                  >+1 (555) 123-4567</a
+                >
+                <p class="text-sm text-gray-500 mt-1">Mon-Fri: 9AM-6PM EST</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 bg-secondary/10 text-secondary rounded-xl flex items-center justify-center flex-shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-neutral mb-1">Email Us</h4>
+                <p class="text-gray-600 mb-2">
+                  Get detailed responses to your questions
+                </p>
+                <a
+                  href="mailto:hello@virtualtour360.com"
+                  class="text-secondary-500 hover:underline font-medium"
+                  >hello@virtualtour360.com</a
+                >
+                <p class="text-sm text-gray-500 mt-1">
+                  Response within 2 hours
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 bg-accent/10 text-accent rounded-xl flex items-center justify-center flex-shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-neutral mb-1">Live Chat</h4>
+                <p class="text-gray-600 mb-2">
+                  Instant support for quick questions
+                </p>
+                <button class="text-accent-500 hover:underline font-medium"
+                  >Start Chat Now</button
+                >
+                <p class="text-sm text-gray-500 mt-1">Available 24/7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <h3 class="text-2xl font-bold text-neutral mb-6">
+            Frequently Asked Questions
+          </h3>
+
+          <div class="space-y-4"></div>
+          <div class="collapse collapse-plus border border-gray-200 rounded-lg">
+            <input type="radio" name="faq-accordion" checked="checked" />
+            <div class="collapse-title text-lg font-medium text-secondary-500">
+              How long does it take to create a virtual tour?
+            </div>
+            <div class="collapse-content">
+              <p class="text-gray-600">
+                Most virtual tours are completed within 5-7 business days from
+                the photo shoot. Complex projects may take 10-14 days. We'll
+                provide a detailed timeline during your consultation.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-plus border border-gray-200 rounded-lg">
+            <input type="radio" name="faq-accordion" />
+            <div class="collapse-title text-lg font-medium text-secondary-500">
+              What's included in a virtual tour package?
+            </div>
+            <div class="collapse-content">
+              <p class="text-gray-600">
+                Each package includes professional photography, 360° processing,
+                interactive hotspots, mobile optimization, hosting, and basic
+                analytics. Premium packages add features like floor plans and
+                custom branding.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-plus border border-gray-200 rounded-lg">
+            <input type="radio" name="faq-accordion" />
+            <div class="collapse-title text-lg font-medium text-secondary-500">
+              Can I embed tours on my website?
+            </div>
+            <div class="collapse-content">
+              <p class="text-gray-600">
+                Absolutely! We provide simple embed codes that work with any
+                website platform including WordPress, Shopify, Wix, and custom
+                HTML sites. No technical knowledge required.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-plus border border-gray-200 rounded-lg">
+            <input type="radio" name="faq-accordion" />
+            <div class="collapse-title text-lg font-medium text-secondary-500">
+              Do you offer photography services?
+            </div>
+            <div class="collapse-content">
+              <p class="text-gray-600">
+                Yes! We have certified photographers worldwide who specialize in
+                360° photography. We handle everything from scheduling to final
+                delivery, ensuring professional quality throughout.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-plus border border-gray-200 rounded-lg">
+            <input type="radio" name="faq-accordion" />
+            <div class="collapse-title text-lg font-medium text-secondary-500">
+              What are the ongoing costs?
+            </div>
+            <div class="collapse-content">
+              <p class="text-gray-600">
+                After the initial creation fee, hosting starts at $29/month per
+                tour. This includes unlimited views, analytics, updates, and
+                24/7 support. Enterprise customers get volume discounts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact-form");
+
+    form?.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+
+      // Simulate form submission
+      const submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) {
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = "Sending...";
+        submitBtn.disabled = true;
+
+        // Simulate API call
+        setTimeout(() => {
+          alert(
+            "Thank you for your message! We'll get back to you within 24 hours."
+          );
+          form.reset();
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+        }, 2000);
+      }
+    });
+  });
+</script>
