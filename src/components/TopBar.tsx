@@ -51,7 +51,7 @@ export function TopBar({
         </button>
 
         <div className="topbar-identity">
-          <span className="topbar-brand">MINERA 360</span>
+          <span className="topbar-brand">360 Tour</span>
           <span className="topbar-divider">/</span>
           <span className="topbar-station-name">{currentStation.name}</span>
         </div>
