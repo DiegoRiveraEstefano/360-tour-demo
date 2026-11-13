@@ -18,5 +18,15 @@ export default defineConfig({
     target: "esnext",
     cssMinify: true,
     sourcemap: false,
+    chunkSizeWarningLimit: 800,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          three: ["three"],
+          viewer: ["@photo-sphere-viewer/core", "@photo-sphere-viewer/autorotate-plugin"],
+          preact: ["preact", "preact/hooks"],
+        },
+      },
+    },
   },
 });
