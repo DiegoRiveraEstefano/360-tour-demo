@@ -1,32 +1,27 @@
 {
   "name": "360-tour-demo",
+  "version": "0.1.0",
+  "private": true,
   "type": "module",
-  "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "check": "biome check .",
+    "format": "biome format --write .",
+    "lint": "biome lint .",
+    "lint:fix": "biome check --write ."
   },
   "dependencies": {
-    "@astrojs/partytown": "^2.1.4",
-    "@astrojs/sitemap": "^3.4.1",
-    "@astrojs/svelte": "^7.1.0",
-    "@photo-sphere-viewer/core": "^5.13.3",
-    "@photo-sphere-viewer/equirectangular-video-adapter": "^5.13.3",
-    "@photo-sphere-viewer/markers-plugin": "^5.13.3",
-    "@photo-sphere-viewer/video-plugin": "^5.13.3",
-    "@tailwindcss/vite": "^4.1.11",
-    "astro": "^5.11.0",
-    "svelte": "^5.35.6",
-    "tailwindcss": "^4.1.11",
-    "typescript": "^5.8.3"
+    "@photo-sphere-viewer/core": "5.13.3",
+    "preact": "^10.26.4",
+    "three": "^0.170.0"
   },
-  "trustedDependencies": [
-    "@tailwindcss/oxide"
-  ],
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.16",
-    "daisyui": "^5.0.46"
+    "@biomejs/biome": "1.9.4",
+    "@preact/preset-vite": "^2.10.2",
+    "@types/three": "^0.170.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.2.0"
   }
 }
